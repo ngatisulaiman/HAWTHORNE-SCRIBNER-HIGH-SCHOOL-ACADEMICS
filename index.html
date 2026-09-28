@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hawthorne Scribner High School Academics — learning, achievement, resources and student success.">
+  <title>Hawthorne Scribner | Academics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="topbar"><div class="container topbar-inner"><span>2026–2027 Academic Year</span><span>Excellence • Integrity • Innovation</span></div></div>
+
+  <header class="header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Hawthorne Scribner Academics home">
+        <span class="crest">HS</span>
+        <span><b>HAWTHORNE SCRIBNER</b><small>HIGH SCHOOL • ACADEMICS</small></span>
+      </a>
+      <button class="menu-toggle" aria-label="Open menu">☰</button>
+      <nav class="nav">
+        <a class="active" href="#home">Home</a>
+        <a href="#academics">Academics</a>
+        <a href="#subjects">Subjects</a>
+        <a href="#resources">Resources</a>
+        <a href="#results">Results</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="portal-btn" href="#portal">Student Portal <span>↗</span></a>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-glow"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="pulse"></span> Academic excellence starts here</div>
+          <h1>Learn boldly.<br><em>Achieve greatly.</em></h1>
+          <p class="hero-text">A modern academic hub for Hawthorne Scribner students — bringing together learning pathways, subjects, study resources, academic results and opportunities to grow.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#academics">Explore Academics <span>→</span></a>
+            <a class="btn ghost" href="#resources">View Resources</a>
+          </div>
+          <div class="hero-trust"><span>★</span> Building confident learners, critical thinkers and future leaders.</div>
+        </div>
+        <div class="hero-card">
+          <div class="card-top"><span>ACADEMIC PULSE</span><span class="live">● LIVE</span></div>
+          <div class="score">92<span>%</span></div>
+          <p>Students meeting or exceeding their academic targets</p>
+          <div class="progress"><span style="width:92%"></span></div>
+          <div class="mini-grid">
+            <div><strong>18</strong><small>Subjects</small></div>
+            <div><strong>94%</strong><small>Attendance</small></div>
+            <div><strong>86%</strong><small>Homework</small></div>
+          </div>
+          <div class="card-note">↗ <b>8.4%</b> improvement this term</div>
+        </div>
+      </div>
+      <div class="scroll-hint">SCROLL TO DISCOVER <span>↓</span></div>
+    </section>
+
+    <section class="stats">
+      <div class="container stats-grid">
+        <div><strong>18+</strong><span>Core & elective subjects</span></div>
+        <div><strong>24/7</strong><span>Digital learning access</span></div>
+        <div><strong>1,200+</strong><span>Learning resources</span></div>
+        <div><strong>4</strong><span>Academic pathways</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="academics">
+      <div class="container">
+        <div class="section-head"><div><span class="kicker">THE ACADEMIC EXPERIENCE</span><h2>Everything students need<br>to <span>move forward.</span></h2></div><p>Designed around clear learning goals, strong study habits, meaningful assessment and continuous improvement.</p></div>
+        <div class="feature-grid">
+          <article class="feature large"><div class="icon">◈</div><h3>Learning Pathways</h3><p>Explore academic pathways, subject combinations and progression opportunities that help students plan with purpose.</p><a href="#subjects">Explore pathways →</a></article>
+          <article class="feature"><div class="icon">✦</div><h3>Smart Study</h3><p>Study guides, revision plans, notes and practice activities organized for focused learning.</p><a href="#resources">Open study hub →</a></article>
+          <article class="feature"><div class="icon">✓</div><h3>Track Progress</h3><p>Understand performance through results, targets, attendance and personalized academic goals.</p><a href="#results">View results →</a></article>
+          <article class="feature"><div class="icon">⌁</div><h3>Academic Support</h3><p>Find tutoring, teacher guidance, consultation times and support resources when you need them.</p><a href="#contact">Get support →</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark-section" id="subjects">
+      <div class="container">
+        <div class="section-head light"><div><span class="kicker">SUBJECT CENTRE</span><h2>Build your <span>knowledge.</span></h2></div><p>Browse subject areas and discover the skills, concepts and resources behind each learning journey.</p></div>
+        <div class="subject-toolbar">
+          <div class="search"><span>⌕</span><input id="subjectSearch" type="search" placeholder="Search subjects..."></div>
+          <div class="chips"><button class="chip active" data-filter="all">All</button><button class="chip" data-filter="science">Science</button><button class="chip" data-filter="humanities">Humanities</button><button class="chip" data-filter="languages">Languages</button><button class="chip" data-filter="technology">Technology</button></div>
+        </div>
+        <div class="subjects-grid" id="subjectGrid">
+          <article class="subject" data-category="science" data-name="biology"><span>01</span><div class="subject-icon">⚗</div><h3>Biology</h3><p>Life systems, ecology, genetics & human biology.</p><b>Explore →</b></article>
+          <article class="subject" data-category="science" data-name="physics"><span>02</span><div class="subject-icon">◉</div><h3>Physics</h3><p>Forces, energy, waves, electricity & modern physics.</p><b>Explore →</b></article>
+          <article class="subject" data-category="science" data-name="chemistry"><span>03</span><div class="subject-icon">◇</div><h3>Chemistry</h3><p>Matter, reactions, organic chemistry & analysis.</p><b>Explore →</b></article>
+          <article class="subject" data-category="humanities" data-name="history"><span>04</span><div class="subject-icon">⌛</div><h3>History</h3><p>People, events, civilizations and historical inquiry.</p><b>Explore →</b></article>
+          <article class="subject" data-category="humanities" data-name="geography"><span>05</span><div class="subject-icon">◎</div><h3>Geography</h3><p>Places, environments, mapping and human systems.</p><b>Explore →</b></article>
+          <article class="subject" data-category="languages" data-name="english literature"><span>06</span><div class="subject-icon">Aa</div><h3>English & Literature</h3><p>Language, communication, reading and literary analysis.</p><b>Explore →</b></article>
+          <article class="subject" data-category="technology" data-name="ict computer science"><span>07</span><div class="subject-icon">▣</div><h3>ICT & Computing</h3><p>Digital literacy, systems, coding and information technology.</p><b>Explore →</b></article>
+          <article class="subject" data-category="humanities" data-name="economics"><span>08</span><div class="subject-icon">↗</div><h3>Economics</h3><p>Markets, development, policy and economic decision-making.</p><b>Explore →</b></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="resources">
+      <div class="container">
+        <div class="section-head"><div><span class="kicker">LEARNING RESOURCE HUB</span><h2>Study smarter,<br><span>not harder.</span></h2></div><a class="outline-btn" href="#resources">Browse all resources →</a></div>
+        <div class="resource-grid">
+          <article class="resource"><div class="resource-icon purple">▤</div><div><span>REVISION</span><h3>Revision Notes</h3><p>Concise topic notes and key concepts for quick review.</p></div><b>→</b></article>
+          <article class="resource"><div class="resource-icon blue">◇</div><div><span>ASSESSMENT</span><h3>Past Papers</h3><p>Practice papers, questions and worked-answer activities.</p></div><b>→</b></article>
+          <article class="resource"><div class="resource-icon orange">▶</div><div><span>MEDIA</span><h3>Video Lessons</h3><p>Visual explanations for difficult concepts and topics.</p></div><b>→</b></article>
+          <article class="resource"><div class="resource-icon green">✓</div><div><span>PLANNING</span><h3>Study Planner</h3><p>Organize your week, set targets and stay consistent.</p></div><b>→</b></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="results-section" id="results">
+      <div class="container results-grid">
+        <div><span class="kicker">RESULTS & PROGRESS</span><h2>See progress.<br><span>Set the next target.</span></h2><p>Academic results are more than numbers. Use performance information to celebrate growth, identify areas for support and plan the next stage.</p><a class="btn primary" href="#portal">Open Results Portal →</a></div>
+        <div class="results-card">
+          <div class="result-head"><div><small>OVERALL ACADEMIC PERFORMANCE</small><strong>92.4%</strong></div><span class="badge">+8.4% ↑</span></div>
+          <div class="chart"><div class="bars"><i style="height:48%"><label>Q1</label></i><i style="height:61%"><label>Q2</label></i><i style="height:72%"><label>Q3</label></i><i style="height:84%"><label>Q4</label></i><i class="current" style="height:92%"><label>Now</label></i></div></div>
+          <div class="result-foot"><span>Academic target <b>90%</b></span><span>Current <b>92.4%</b></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="portal">
+      <div class="container portal-box">
+        <div><span class="kicker">STUDENT & FAMILY ACCESS</span><h2>Your academic life,<br><span>in one place.</span></h2><p>Access results, announcements, learning resources, academic calendars and support information through the school portal.</p></div>
+        <div class="portal-actions"><button class="btn primary" id="portalDemo">Enter Student Portal →</button><button class="btn light-btn" id="calendarBtn">Academic Calendar</button></div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        <div><span class="kicker">ACADEMIC SUPPORT</span><h2>Questions?<br><span>Let's get you moving.</span></h2><p>Reach out to the academic office for curriculum information, study support, subject guidance or assessment queries.</p></div>
+        <div class="contact-card"><div><b>Academic Office</b><p>Monday – Friday · 8:00 AM – 5:00 PM</p></div><div><b>Email</b><p>academics@hawthornescribner.edu</p></div><div><b>Student support</b><p>Speak with your class teacher or academic coordinator.</p></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container footer-grid"><div class="brand footer-brand"><span class="crest">HS</span><span><b>HAWTHORNE SCRIBNER</b><small>HIGH SCHOOL • ACADEMICS</small></span></div><div><b>Academics</b><a href="#subjects">Subjects</a><a href="#resources">Resources</a><a href="#results">Results</a></div><div><b>Support</b><a href="#contact">Academic Office</a><a href="#portal">Student Portal</a><a href="#home">Back to top ↑</a></div></div><div class="container copyright">© 2026 Hawthorne Scribner High School. Academic Excellence • Integrity • Innovation.</div></footer>
+
+  <div class="modal" id="modal"><div class="modal-box"><button class="close" id="closeModal">×</button><div class="modal-icon">HS</div><h2 id="modalTitle">Student Portal</h2><p id="modalText">Portal access is ready to be connected to your school's authentication system. This demo keeps the experience in place until the backend is connected.</p><button class="btn primary" id="modalOk">Continue</button></div></div>
+  <script src="script.js"></script>
+</body>
+</html>
