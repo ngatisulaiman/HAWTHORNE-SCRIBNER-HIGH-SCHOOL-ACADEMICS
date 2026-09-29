@@ -35,7 +35,9 @@ const papersDemo=document.getElementById('papersDemo');const papersCard=document
   ];
   revealItems.forEach((el,i)=>{
     el.classList.add('reveal');
-    el.style.transitionDelay=Math.min((i%4)*60,180)+'ms';
+    const type=i%3===0?'slide-left':i%3===1?'slide-up':'slide-right';
+    el.classList.add(type);
+    el.style.setProperty('--reveal-delay',Math.min((i%5)*70,280)+'ms');
   });
   const observer=new IntersectionObserver(entries=>{
     entries.forEach(entry=>{
