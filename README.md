@@ -1,1 +1,1 @@
-# HAWTHORNE-SCRIBNER-HIGH-SCHOOL-ACADEMICS
+hshs learners beed
