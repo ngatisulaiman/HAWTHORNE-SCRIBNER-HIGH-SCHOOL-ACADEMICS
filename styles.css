@@ -68,3 +68,64 @@ body{background:
 .empty-state{grid-column:1/-1;text-align:center;padding:35px;border:1px dashed #39598a;border-radius:15px;color:#9aabc2;font-size:13px}
 @media(max-width:700px){.back-top{right:14px;bottom:14px;width:42px;height:42px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero-copy,.hero-card,.eyebrow,.hero-glow,.hero-card:before{animation:none}.reveal{opacity:1;transform:none;transition:none}}
+
+
+/* === Purple academic theme === */
+:root{
+  --purple:#6d3df5;
+  --purple-dark:#32145f;
+  --purple-deep:#170b32;
+  --purple-light:#f2ecff;
+  --purple-line:#e5dafb;
+  --purple-glow:rgba(109,61,245,.20);
+}
+body{
+  background:
+    radial-gradient(circle at 8% 12%,rgba(145,92,255,.12),transparent 25%),
+    radial-gradient(circle at 92% 78%,rgba(109,61,245,.10),transparent 28%),
+    linear-gradient(180deg,#faf8ff 0%,#f5f0ff 48%,#fff 100%);
+}
+.topbar{background:linear-gradient(90deg,#16082f,#32145f);color:#ded1f5}
+.header{border-bottom-color:var(--purple-line)}
+.crest{background:linear-gradient(135deg,#32145f,#7b4cff)}
+.nav a:hover,.nav a.active{color:var(--purple)}
+.nav a:after{background:linear-gradient(90deg,#8b5cff,#5b2bd9)}
+.portal-btn{background:linear-gradient(135deg,#32145f,#6d3df5)}
+.hero{
+  background:
+    radial-gradient(circle at 82% 12%,rgba(174,127,255,.34),transparent 28%),
+    radial-gradient(circle at 12% 85%,rgba(109,61,245,.28),transparent 30%),
+    linear-gradient(135deg,#170b32 0%,#32145f 52%,#4d2382 100%);
+}
+.hero-glow{background:radial-gradient(circle,rgba(171,116,255,.42),rgba(109,61,245,.12) 55%,transparent 70%)}
+.primary{background:linear-gradient(135deg,#7b4cff,#5b2bd9);box-shadow:0 14px 30px rgba(109,61,245,.28)}
+.kicker,.eyebrow{color:#b68cff}
+.section-head h2 span,.results-section h2 span,.portal-box h2 span,.contact-grid h2 span{
+  background:linear-gradient(90deg,#6d3df5,#a15cff);
+  -webkit-background-clip:text;color:transparent;
+}
+.feature.large,.portal-box{
+  background:linear-gradient(135deg,#211044,#4a217c);
+}
+.feature:hover,.resource:hover,.results-card:hover{box-shadow:0 24px 55px rgba(76,39,133,.16)}
+.dark-section{
+  background:
+    radial-gradient(circle at 85% 10%,#52258a,transparent 30%),
+    linear-gradient(135deg,#170b32,#2c1455);
+}
+.subject:hover{border-color:#9b72ff;background:#3b1d66;box-shadow:0 18px 40px rgba(109,61,245,.20)}
+.chip.active,.chip:hover{background:#6d3df5;border-color:#6d3df5}
+.subject-icon{color:#b68cff}
+.resource:before{background:linear-gradient(#8b5cff,#5b2bd9)}
+.papers-box{
+  background:linear-gradient(135deg,#f1ebff,#faf6ff);
+  border-color:#e2d5fb;
+}
+.papers-box:after{background:linear-gradient(135deg,rgba(109,61,245,.18),rgba(161,92,255,.06))}
+.results-section{background:linear-gradient(180deg,#f0eaff,#f8f4ff)}
+.progress span,.bars i{background:linear-gradient(90deg,#8b5cff,#5b2bd9)}
+.bars i{background:linear-gradient(#ad82ff,#6d3df5)}
+.bars i.current{background:linear-gradient(#c09bff,#7b4cff)}
+.scroll-progress{background:linear-gradient(90deg,#b68cff,#6d3df5,#4a1fb8);box-shadow:0 0 12px rgba(109,61,245,.42)}
+.back-top{color:#452080;border-color:#dfd2f7;box-shadow:0 12px 30px rgba(76,39,133,.14)}
+.modal-icon{background:linear-gradient(135deg,#32145f,#6d3df5)}
