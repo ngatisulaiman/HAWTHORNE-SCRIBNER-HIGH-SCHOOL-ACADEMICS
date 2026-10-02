@@ -75,3 +75,41 @@ const papersDemo=document.getElementById('papersDemo');const papersCard=document
     });
   }
 })();
+
+
+/* === Past Papers & Resources Library === */
+(() => {
+  const search = document.getElementById('resourceSearch');
+  const cards = [...document.querySelectorAll('.resource-card')];
+  const filters = [...document.querySelectorAll('.resource-filter')];
+  const empty = document.getElementById('resourceEmpty');
+
+  function filterResources() {
+    const term = (search?.value || '').toLowerCase().trim();
+    const active = document.querySelector('.resource-filter.active')?.dataset.resourceFilter || 'all';
+    let visible = 0;
+
+    cards.forEach(card => {
+      const name = (card.dataset.name || '').toLowerCase();
+      const types = (card.dataset.type || '').toLowerCase().split(' ');
+      const matchesText = !term || name.includes(term) || types.some(type => type.includes(term));
+      const matchesFilter = active === 'all' || types.includes(active);
+      const show = matchesText && matchesFilter;
+      card.style.display = show ? 'flex' : 'none';
+      if (show) visible++;
+    });
+
+    if (empty) empty.classList.toggle('show', visible === 0);
+  }
+
+  search?.addEventListener('input', filterResources);
+  filters.forEach(button => {
+    button.addEventListener('click', () => {
+      filters.forEach(item => item.classList.remove('active'));
+      button.classList.add('active');
+      filterResources();
+    });
+  });
+
+  filterResources();
+})();
