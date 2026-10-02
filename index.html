@@ -24,7 +24,7 @@
         <a class="active" href="#home">Home</a>
         <a href="#academics">Academics</a>
         <a href="#subjects">Subjects</a>
-        <a href="#resources">Resources</a><a href="#past-papers">Past Papers</a>
+        <a href="#resources">Resources</a><a href="#resources">Past Papers</a>
         <a href="#results">Results</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -103,16 +103,126 @@
       </div>
     </section>
 
-    <section class="section papers-section" id="past-papers"><div class="container papers-box"><div><span class="kicker">EXAM PREPARATION</span><h2>Practice with <span>purpose.</span></h2><p>Access organized past papers by subject and level, then use them to build confidence, improve timing and prepare for assessments.</p></div><div class="paper-actions"><button class="btn primary" id="papersDemo">Open Past Papers →</button><a class="btn paper-light" href="#subjects">Choose a Subject</a></div></div></section>
+    <section class="section papers-section" id="past-papers"><div class="container papers-box"><div><span class="kicker">EXAM PREPARATION</span><h2>Practice with <span>purpose.</span></h2><p>Access organized past papers by subject and level, then use them to build confidence, improve timing and prepare for assessments.</p></div><div class="paper-actions"><a class="btn primary" href="#resources">Open Past Papers →</a><a class="btn paper-light" href="#subjects">Choose a Subject</a></div></div></section>
 
-    <section class="section" id="resources">
+    <section class="section resource-library" id="resources">
       <div class="container">
-        <div class="section-head"><div><span class="kicker">LEARNING RESOURCE HUB</span><h2>Study smarter,<br><span>not harder.</span></h2></div><a class="outline-btn" href="#resources">Browse all resources →</a></div>
-        <div class="resource-grid">
-          <article class="resource"><div class="resource-icon purple">▤</div><div><span>REVISION</span><h3>Revision Notes</h3><p>Concise topic notes and key concepts for quick review.</p></div><b>→</b></article>
-          <article class="resource clickable-resource" id="pastPapersCard"><div class="resource-icon blue">◇</div><div><span>ASSESSMENT</span><h3>Past Papers</h3><p>Practice papers, questions and worked-answer activities.</p></div><b>→</b></article>
-          <article class="resource"><div class="resource-icon orange">▶</div><div><span>MEDIA</span><h3>Video Lessons</h3><p>Visual explanations for difficult concepts and topics.</p></div><b>→</b></article>
-          <article class="resource"><div class="resource-icon green">✓</div><div><span>PLANNING</span><h3>Study Planner</h3><p>Organize your week, set targets and stay consistent.</p></div><b>→</b></article>
+        <div class="section-head library-head">
+          <div>
+            <span class="kicker">PAST PAPERS & RESOURCES</span>
+            <h2>Your complete <span>study library.</span></h2>
+          </div>
+          <p>Find past papers, revision materials and academic documents in one organized place. Search by subject, level or resource type.</p>
+        </div>
+
+        <div class="library-stats">
+          <div><strong>5</strong><span>Available files</span></div>
+          <div><strong>PDF</strong><span>Easy to view</span></div>
+          <div><strong>24/7</strong><span>Student access</span></div>
+          <div><strong>FREE</strong><span>Learning access</span></div>
+        </div>
+
+        <div class="library-panel">
+          <div class="library-toolbar">
+            <div class="library-search">
+              <span>⌕</span>
+              <input id="resourceSearch" type="search" placeholder="Search papers, subjects or topics..." aria-label="Search resources">
+            </div>
+            <div class="resource-filters" role="group" aria-label="Filter resources">
+              <button class="resource-filter active" data-resource-filter="all">All</button>
+              <button class="resource-filter" data-resource-filter="past-paper">Past Papers</button>
+              <button class="resource-filter" data-resource-filter="notes">Notes & Guides</button>
+              <button class="resource-filter" data-resource-filter="ict">ICT</button>
+              <button class="resource-filter" data-resource-filter="science">Science</button>
+            </div>
+          </div>
+
+          <div class="resource-grid library-grid" id="resourceGrid">
+            <article class="resource-card" data-type="past-paper science" data-name="2024 UCE Chemistry 5451 Proposed Scoring Guide">
+              <div class="file-badge chemistry">CH</div>
+              <div class="resource-card-main">
+                <span class="file-type">SCIENCE • SCORING GUIDE</span>
+                <h3>2024 UCE Chemistry 5451 Scoring Guide</h3>
+                <p>Proposed scoring guide for UCE Chemistry 5451.</p>
+                <div class="resource-meta"><span>📄 PDF</span><span>2024</span></div>
+              </div>
+              <div class="resource-card-actions">
+                <a class="resource-view" href="2024%20UCE%20CHEMISTRY%205451%20PROPOSED%20SCORING%20GUIDE%20BY%20JOSEPH%20LOMOI%20RUGAMOI%20(1).pdf" target="_blank" rel="noopener">View</a>
+                <a class="resource-download" href="2024%20UCE%20CHEMISTRY%205451%20PROPOSED%20SCORING%20GUIDE%20BY%20JOSEPH%20LOMOI%20RUGAMOI%20(1).pdf" download>Download</a>
+              </div>
+            </article>
+
+            <article class="resource-card" data-type="past-paper science" data-name="Mathematics scenario questions">
+              <div class="file-badge mathematics">M</div>
+              <div class="resource-card-main">
+                <span class="file-type">MATHEMATICS • PRACTICE</span>
+                <h3>Mathematics Scenario Questions</h3>
+                <p>Scenario-based mathematics questions for practice and revision.</p>
+                <div class="resource-meta"><span>📄 PDF</span><span>Practice</span></div>
+              </div>
+              <div class="resource-card-actions">
+                <a class="resource-view" href="MATHEMATICS%20SCENARIO%20QUESTIONS-1-1_copy.pdf" target="_blank" rel="noopener">View</a>
+                <a class="resource-download" href="MATHEMATICS%20SCENARIO%20QUESTIONS-1-1_copy.pdf" download>Download</a>
+              </div>
+            </article>
+
+            <article class="resource-card" data-type="notes" data-name="S1 CRE">
+              <div class="file-badge cre">CRE</div>
+              <div class="resource-card-main">
+                <span class="file-type">CRE • SENIOR ONE</span>
+                <h3>S1 CRE Resource</h3>
+                <p>Christian Religious Education material for Senior One learners.</p>
+                <div class="resource-meta"><span>📄 PDF</span><span>S1</span></div>
+              </div>
+              <div class="resource-card-actions">
+                <a class="resource-view" href="S1%20CRE%20(1).pdf" target="_blank" rel="noopener">View</a>
+                <a class="resource-download" href="S1%20CRE%20(1).pdf" download>Download</a>
+              </div>
+            </article>
+
+            <article class="resource-card" data-type="notes ict" data-name="S2 ICT Term 3 2023">
+              <div class="file-badge ict">ICT</div>
+              <div class="resource-card-main">
+                <span class="file-type">ICT • SENIOR TWO</span>
+                <h3>S2 ICT Term 3 — 2023</h3>
+                <p>ICT learning and revision material for Senior Two.</p>
+                <div class="resource-meta"><span>📄 PDF</span><span>S2 • 2023</span></div>
+              </div>
+              <div class="resource-card-actions">
+                <a class="resource-view" href="S2%20ICT%20TERM%203%202023-1.pdf" target="_blank" rel="noopener">View</a>
+                <a class="resource-download" href="S2%20ICT%20TERM%203%202023-1.pdf" download>Download</a>
+              </div>
+            </article>
+
+            <article class="resource-card" data-type="past-paper" data-name="Senior Three History Paper 1">
+              <div class="file-badge history">H</div>
+              <div class="resource-card-main">
+                <span class="file-type">HISTORY • SENIOR THREE</span>
+                <h3>Senior Three History — Paper 1</h3>
+                <p>History assessment paper for Senior Three revision.</p>
+                <div class="resource-meta"><span>📄 PDF</span><span>S3</span></div>
+              </div>
+              <div class="resource-card-actions">
+                <a class="resource-view" href="Senior_Three_History_Paper-1.pdf" target="_blank" rel="noopener">View</a>
+                <a class="resource-download" href="Senior_Three_History_Paper-1.pdf" download>Download</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="library-empty" id="resourceEmpty">
+            <div>⌕</div>
+            <h3>No resources found</h3>
+            <p>Try another subject, file type or search term.</p>
+          </div>
+        </div>
+
+        <div class="upload-info">
+          <div class="upload-info-icon">＋</div>
+          <div>
+            <strong>More resources coming soon</strong>
+            <p>New past papers, notes, revision guides and practical materials can be added to the school library as PDF files.</p>
+          </div>
+          <a href="#contact">Request a resource →</a>
         </div>
       </div>
     </section>
