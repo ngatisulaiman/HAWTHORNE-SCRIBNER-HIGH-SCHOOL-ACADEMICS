@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hawthorne-scribner-high-school-acad.vercel.app/sitemap.xml
