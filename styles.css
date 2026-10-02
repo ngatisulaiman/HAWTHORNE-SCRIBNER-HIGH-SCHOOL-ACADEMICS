@@ -131,53 +131,41 @@ body{
 .modal-icon{background:linear-gradient(135deg,#32145f,#6d3df5)}
 
 
-/* === Past Papers & Resources Library === */
-.resource-library{position:relative}
-.library-head{margin-bottom:28px}
-.library-stats{display:grid;grid-template-columns:repeat(4,1fr);background:#fff;border:1px solid var(--purple-line);border-radius:18px;margin-bottom:20px;box-shadow:0 12px 35px rgba(76,39,133,.06);overflow:hidden}
-.library-stats>div{padding:18px 20px;border-right:1px solid #eee8fa}
-.library-stats>div:last-child{border-right:0}
-.library-stats strong{display:block;font:800 20px Manrope;color:var(--purple-dark)}
-.library-stats span{font-size:10px;color:#8290a5}
-.library-panel{background:rgba(255,255,255,.78);border:1px solid var(--purple-line);border-radius:22px;padding:22px;box-shadow:var(--shadow);backdrop-filter:blur(10px)}
-.library-toolbar{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:20px}
-.library-search{height:44px;min-width:310px;display:flex;align-items:center;gap:9px;padding:0 14px;border:1px solid #ddd3f4;border-radius:12px;background:#fff}
-.library-search span{color:#8764c8;font-size:18px}
-.library-search input{width:100%;border:0;outline:0;background:transparent;color:var(--ink);font:13px "DM Sans",sans-serif}
-.library-search input::placeholder{color:#98a2b4}
+/* === Download Resources page === */
+.download-page{padding-top:82px}
+.download-hero{display:flex;justify-content:space-between;align-items:center;gap:35px;padding:34px 38px;margin-bottom:22px;border-radius:24px;background:linear-gradient(135deg,#211044,#6d3df5);color:#fff;box-shadow:0 22px 55px rgba(69,34,126,.18);position:relative;overflow:hidden}
+.download-hero:after{content:"";position:absolute;width:280px;height:280px;border-radius:50%;right:-80px;top:-150px;border:1px solid rgba(255,255,255,.16);box-shadow:0 0 0 55px rgba(255,255,255,.04),0 0 0 110px rgba(255,255,255,.025)}
+.download-hero .kicker{color:#d7c5ff}
+.download-hero h2{font-size:42px;letter-spacing:-1.8px;margin:8px 0}
+.download-hero h2 span{background:linear-gradient(90deg,#fff,#dfc8ff);-webkit-background-clip:text;color:transparent}
+.download-hero p{max-width:690px;color:#e2d9f2;font-size:13px;margin:0}
+.download-hero-badge{position:relative;z-index:1;min-width:145px;padding:18px 20px;border:1px solid rgba(255,255,255,.18);border-radius:16px;background:rgba(255,255,255,.10);backdrop-filter:blur(8px);text-align:center}
+.download-hero-badge strong{display:block;font:800 30px Manrope}
+.download-hero-badge span{display:block;font-size:10px;color:#e1d6f5}
+.download-toolbar{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:15px}
+.download-search{height:48px;min-width:340px;display:flex;align-items:center;gap:9px;padding:0 15px;border:1px solid #ded5f0;border-radius:12px;background:#fff;box-shadow:0 8px 24px rgba(76,39,133,.05)}
+.download-search span{color:#7657ff;font-size:19px}.download-search input{width:100%;border:0;outline:0;background:transparent;color:var(--ink);font:13px "DM Sans",sans-serif}.download-search input::placeholder{color:#9aa3b3}
 .resource-filters{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end}
-.resource-filter{border:1px solid #ded5f0;background:#fff;color:#716b83;border-radius:999px;padding:8px 12px;font-size:10px;font-weight:700;cursor:pointer;transition:.2s}
+.resource-filter{border:1px solid #ded5f0;background:#fff;color:#716b83;border-radius:999px;padding:9px 13px;font-size:10px;font-weight:700;cursor:pointer;transition:.2s}
 .resource-filter:hover,.resource-filter.active{background:#6d3df5;border-color:#6d3df5;color:#fff}
-.library-grid{grid-template-columns:repeat(2,1fr);gap:12px}
-.resource-card{background:#fff;border:1px solid #e8e1f4;border-radius:16px;padding:17px;display:flex;align-items:flex-start;gap:14px;min-height:170px;transition:.25s;box-shadow:0 7px 22px rgba(45,25,90,.04)}
-.resource-card:hover{transform:translateY(-4px);border-color:#c9b7ef;box-shadow:0 18px 35px rgba(76,39,133,.11)}
-.file-badge{width:48px;height:48px;flex:0 0 48px;border-radius:13px;display:grid;place-items:center;font:800 11px Manrope;background:#f0eaff;color:#6d3df5}
-.file-badge.chemistry{background:#fff0f5;color:#d94d82}
-.file-badge.mathematics{background:#eaf1ff;color:#3565e8}
-.file-badge.cre{background:#fff6e6;color:#c37b16}
-.file-badge.ict{background:#e8f8f6;color:#138f80}
-.file-badge.history{background:#eeeafd;color:#7657ff}
-.resource-card-main{flex:1;min-width:0}
-.file-type{font-size:8px;letter-spacing:1.25px;color:#8d96a7;font-weight:800}
-.resource-card h3{font:800 15px Manrope;margin:5px 0 5px;line-height:1.25}
-.resource-card p{font-size:10px;color:#778297;margin:0 0 10px}
-.resource-meta{display:flex;gap:10px;font-size:9px;color:#9aa3b3}
-.resource-card-actions{display:flex;flex-direction:column;gap:7px}
-.resource-card-actions a{font-size:10px;font-weight:800;text-decoration:none;text-align:center;padding:7px 10px;border-radius:8px;white-space:nowrap}
-.resource-view{border:1px solid #ddd4ef;color:#5d3aa9;background:#fff}
-.resource-download{background:#6d3df5;color:#fff;box-shadow:0 7px 15px rgba(109,61,245,.16)}
-.resource-view:hover{border-color:#6d3df5;color:#6d3df5}
-.resource-download:hover{background:#5422c8}
-.library-empty{display:none;text-align:center;padding:45px 20px;color:#8c95a6}
-.library-empty.show{display:block}
-.library-empty>div{font-size:30px;color:#7657ff}
-.library-empty h3{font:800 18px Manrope;margin:8px 0 3px;color:var(--ink)}
-.library-empty p{font-size:11px;margin:0}
-.upload-info{display:flex;align-items:center;gap:14px;margin-top:16px;padding:17px 20px;border:1px dashed #d7c9ee;border-radius:15px;background:linear-gradient(90deg,#faf7ff,#fff)}
-.upload-info-icon{width:38px;height:38px;border-radius:11px;background:#eee6ff;color:#6d3df5;display:grid;place-items:center;font-size:21px}
-.upload-info>div:nth-child(2){flex:1}
-.upload-info strong{font:800 12px Manrope}
-.upload-info p{margin:2px 0 0;color:#7f899d;font-size:10px}
-.upload-info>a{font-size:10px;color:#6d3df5;font-weight:800;text-decoration:none;white-space:nowrap}
-@media(max-width:850px){.library-toolbar{align-items:stretch;flex-direction:column}.library-search{min-width:0;width:100%}.resource-filters{justify-content:flex-start}.library-grid{grid-template-columns:1fr}}
-@media(max-width:600px){.library-stats{grid-template-columns:repeat(2,1fr)}.library-stats>div:nth-child(2){border-right:0}.library-stats>div:nth-child(-n+2){border-bottom:1px solid #eee8fa}.library-panel{padding:14px}.resource-card{display:grid;grid-template-columns:48px 1fr}.resource-card-actions{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr}.upload-info{align-items:flex-start;flex-wrap:wrap}.upload-info>a{width:100%;padding-left:52px}}
+.download-table{background:#fff;border:1px solid #e5dafb;border-radius:18px;overflow:hidden;box-shadow:0 14px 40px rgba(76,39,133,.07)}
+.download-table-head,.download-row{display:grid;grid-template-columns:minmax(360px,2.2fr) 1fr 1fr 190px;gap:20px;align-items:center}
+.download-table-head{padding:13px 20px;background:#faf8ff;border-bottom:1px solid #eee8fa;color:#9187a6;font-size:9px;letter-spacing:1.2px;font-weight:800}
+.download-row{padding:20px;min-height:150px;border-bottom:1px solid #eee8fa;transition:.22s}
+.download-row:last-child{border-bottom:0}.download-row:hover{background:#fcfaff}
+.resource-info{display:flex;align-items:flex-start;gap:14px;min-width:0}
+.file-badge{width:48px;height:48px;flex:0 0 48px;border-radius:13px;display:grid;place-items:center;font:800 10px Manrope;background:#f0eaff;color:#6d3df5}
+.file-badge.chemistry{background:#fff0f5;color:#d94d82}.file-badge.mathematics{background:#eaf1ff;color:#3565e8}.file-badge.cre{background:#fff6e6;color:#c37b16}.file-badge.ict{background:#e8f8f6;color:#138f80}.file-badge.history{background:#eeeafd;color:#7657ff}
+.resource-info>div:last-child{min-width:0}.resource-label{font-size:8px;letter-spacing:1.2px;color:#8d96a7;font-weight:800}
+.resource-info h3{font:800 15px Manrope;line-height:1.3;margin:5px 0 5px}.resource-info p{font-size:10px;color:#778297;line-height:1.55;margin:0;max-width:560px}
+.resource-column strong{display:block;font-size:11px;color:#27314b}.mobile-label{display:none}
+.resource-actions{display:flex;flex-direction:column;gap:7px}
+.resource-actions a{font-size:10px;font-weight:800;text-decoration:none;text-align:center;padding:9px 10px;border-radius:8px;white-space:nowrap}
+.resource-view{border:1px solid #ddd4ef;color:#5d3aa9;background:#fff}.resource-view:hover{border-color:#6d3df5;color:#6d3df5}
+.resource-download{background:#6d3df5;color:#fff;box-shadow:0 7px 15px rgba(109,61,245,.16)}.resource-download:hover{background:#5422c8}
+.library-empty{display:none;text-align:center;padding:50px 20px;color:#8c95a6}.library-empty.show{display:block}.library-empty>div{font-size:30px;color:#7657ff}.library-empty h3{font:800 18px Manrope;margin:8px 0 3px;color:var(--ink)}.library-empty p{font-size:11px;margin:0}
+.download-note{display:flex;align-items:center;gap:14px;margin-top:15px;padding:16px 19px;border:1px dashed #d7c9ee;border-radius:14px;background:linear-gradient(90deg,#faf7ff,#fff)}
+.download-note>span{width:36px;height:36px;border-radius:10px;background:#eee6ff;color:#6d3df5;display:grid;place-items:center;font-size:20px}.download-note div{flex:1}.download-note strong{font:800 12px Manrope}.download-note p{margin:2px 0 0;color:#7f899d;font-size:10px}.download-note a{font-size:10px;color:#6d3df5;font-weight:800;text-decoration:none;white-space:nowrap}
+@media(max-width:900px){.download-table-head{display:none}.download-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:18px}.resource-info{grid-column:1/-1}.resource-column{padding:8px 0}.mobile-label{display:block;font-size:8px;letter-spacing:1px;color:#9a91aa;font-weight:800;margin-bottom:3px}.resource-actions{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr}.download-toolbar{align-items:stretch;flex-direction:column}.download-search{min-width:0;width:100%}.resource-filters{justify-content:flex-start}}
+@media(max-width:600px){.download-page{padding-top:65px}.download-hero{padding:27px 23px;align-items:flex-start;flex-direction:column}.download-hero h2{font-size:34px}.download-hero-badge{min-width:130px}.download-row{grid-template-columns:1fr 1fr}.download-note{align-items:flex-start;flex-wrap:wrap}.download-note a{width:100%;padding-left:50px}}
+@media(prefers-reduced-motion:reduce){.download-row,.resource-actions a{transition:none}}
